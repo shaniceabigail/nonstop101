@@ -1,11 +1,18 @@
 ---
-sidebar_label: 'Java'
+sidebar_label: 'Java on the NonStop'
 sidebar_position: 1
+
+tags:
+- developer
+
 ---
 
-# Getting Started
+# Java on the NonStop
 
-## Platform
+## Where do we code?
+Some of our favourite IDEs include VSCode and Eclipse.
+
+<!-- ## Platform
 - Logging into the TACL System
 - Logging into OSS
 - Navigating subsystems
@@ -43,8 +50,8 @@ Layer that works between the Database and Platform
 - JEE Containers
 - TMF
 
-
+<!-- 
 ## Development Environment
 - NSDEE - language compilers and runtimes
 - NSDevEnv (on Cloud)
-- NSDevOps
+- NSDevOps -->

@@ -1,6 +1,10 @@
 ---
-sidebar_label: 'SQL/MX'
+sidebar_label: 'SQLMX'
 sidebar_position: 1
+
+tags:
+- database admin
+- backend developer
 ---
 
 # SQL/MX

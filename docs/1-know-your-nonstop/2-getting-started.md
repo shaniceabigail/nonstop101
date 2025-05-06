@@ -1,6 +1,9 @@
 ---
-sidebar_label: 'Getting Started'
-sidebar_position: 1
+sidebar_label: 'Crash Course - Guardian'
+sidebar_position: 2
+
+tags:
+- guardian
 ---
 # Getting Started with HPE NonStop Guardian
 
@@ -10,7 +13,7 @@ Watch [this video](https://vimeo.com/showcase/7776942/video/479116681) to unders
 
 ## System Access
 
-To begin working with NonStop Guardian, you'll need to access the system through a terminal emulator. The most common method is using MR-Win6530, a Windows-based terminal emulator specifically designed for NonStop systems.
+To begin working with NonStop Guardian, you'll need to access the system through a terminal emulator. The most common method is using [MR-Win6530, a Windows-based terminal emulator specifically designed for NonStop systems](https://www.comforte.com/fileadmin/Collateral/FS_MRWin6530.pdf).
 
 ### TACL: Your Command Interface
 

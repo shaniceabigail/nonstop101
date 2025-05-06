@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/tricycle1.svg').default,
     description: (
       <>
-        Learn about HPE NonStop - find our "Getting Started" tutorials and simple commands on your very first HPE NonStop system.
+        Learn about HPE NonStop - find our "Getting Started" tutorials and handy commands on your very first HPE NonStop system.
       </>
     ),
   },
@@ -19,7 +19,7 @@ const FeatureList = [
     Svg: require('@site/static/img/bike1.svg').default,
     description: (
       <>
-       Explore the technical architectures and sub-systems from the OS that has protected mission-critical processes for over 40 years.
+       Explore the technical architectures and sub-systems from the OS that has protected mission-critical processes for the past 50 years.
       </>
     ),
   },

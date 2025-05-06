@@ -1,6 +1,11 @@
 ---
 sidebar_label: 'Apache Tomcat - Setup'
-sidebar_position: 3
+sidebar_position: 2
+
+tags:
+- where to start
+- developer
+- java servlet
 ---
 
 # Getting Started
@@ -165,3 +170,5 @@ Let's create our first Hello World webapp with Tomcat.
 >
 
 ```
+<!-- 
+reference: https://www3.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html -->

@@ -1,6 +1,9 @@
 ---
-sidebar_label: 'OSS Commands Cheat Sheet'
-sidebar_position: 2
+sidebar_label: 'Cheat Sheet - OSS'
+sidebar_position: 4
+
+tags:
+- OSS
 ---
 
 # OSS Commands Cheat Sheet

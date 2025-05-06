@@ -1,6 +1,9 @@
 ---
 sidebar_label: 'Git - Your NonStop to Cloud Repository'
 sidebar_position: 1
+
+tags:
+- where to start
 ---
 
 # Connecting git to Your NonStop
@@ -40,7 +43,8 @@ Let's get started!
 
 3. Generate key with a key name i.e mykey, and add a comment for the key generated with your email id.
 ```    
-     % GENERATE KEY mykey,TYPE RSE, BITS 2048, COMMENT "myemail@email.com"
+     % GENERATE KEY mykey,TYPE ECDSA, BITS 521, COMMENT "myemail@email.com"
+     OK, key user:mykey successfully generated
 ```
 
 4. Export mykey into the OpenSSH format, store into a volume and exit.
@@ -53,7 +57,7 @@ Let's get started!
 1. Using Guardian, go to the volume where the key is stored in and copy the key into the command line.
 ```     
      $VOLUME USER 2> volume $volume.USER
-     $VOLUME USER 3> fup copy pubkey,,recin 4096, recout 4096, fold
+     $VOLUME USER 3> fup copy pubkey,,recin 521, recout 521, fold
 ```
 
 ## 3. Dropping the key onto the cloud repository
@@ -72,6 +76,20 @@ Log into OSS and add the repository url into volume, **$ZSTCF**, and add host on
 ```
     /home/usr: /G/system/zssh/sshoss -T -S \$ZSTCF git@github.com
 ```
+
+# Errors with your keys?
+## Deleting NonStop Generated Key on NonStop
+```
+     $VOLUME USER 1> sshcom $ZSTCF
+     % mode client
+     mode client
+     OK, switched to client mode
+
+     % info knownhost *: *
+     % delete knownhost [knownby]:[knownhost]
+```
+
+
 
 Congratulations! You now have a git repository on your NonStop, ready for development and your git workflows!
 

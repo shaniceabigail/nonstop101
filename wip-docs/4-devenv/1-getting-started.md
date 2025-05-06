@@ -3,6 +3,8 @@ sidebar_label: 'FUP'
 sidebar_position: 1
 ---
 
+# Language Environment
+<!-- 
 # Getting Started
 
 ## Platform
@@ -47,4 +49,4 @@ Layer that works between the Database and Platform
 ## Development Environment
 - NSDEE - language compilers and runtimes
 - NSDevEnv (on Cloud)
-- NSDevOps
+- NSDevOps -->

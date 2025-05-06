@@ -3,10 +3,40 @@ sidebar_label: 'Technical Architecture'
 sidebar_position: 2
 ---
 
-# NonStop Technical Architecture
+# System Architecture
+In the market today, a variety of hardware platforms run an even more diverse range of operating systems, and aside from a few other vendors, most hardware and software pieces seldom come from the same vendor. **HPE NonStop's tight hardware and software integration** enables fault-tolerance and its self-healing capabilities to be consistent throughout its hardware and software components.
 
-NonStop systems, developed by Hewlett Packard Enterprise, are designed for environments that require continuous availability and fault tolerance. This article delves into the technical architecture of NonStop systems, highlighting their unique features and components.
+![system-architecture-v1](/img/system-architecture.png)
 
+### Clusters vs NonStop's Fault Tolerance 
+Quality servers with RAID (redundant array of independent disks) arrays is one of the ways to provide basic fault tolerance to storage. However this level of fault tolerance is often insufficient for most applications - hence the invention of **clusters**. 
+
+Clusters are a set of tightly coupled servers and systems sharing resources, to protect mission-critical workloads from certain failures. Clustering is a complex task - requiring meticulous load balancing and fine tuning, especially with syncronous data between individual systems.
+
+NonStop's hardware reinforces redundancy to the extreme, providing effectively 100 percent uptime - every hardware component on the NonStop system is duplicated. This means that there is at least two storage units, two processors and two RAM busses.
+
+### Self-Healing Software
+From a high-level overview, the HPE NonStop system can be described as a self-managing, self-healing cluster in one OS image. This is possible because of the **shared nothing architecture**, preventing malware and viruses from spreading between the components of the systems.
+
+Critical operating system processes run in what is called **process pairs** in over two CPUs, allowing the processes to survive failures of any one particular CPU.
+
+Because of the design, the software is able to **transparently fail-over** over to the second set of components without interrupting existing operations.
+
+
+# NonStop TS/MP - Transaction Services / Massively Parallel
+
+Under the hood, HPE NonStop Pathway with TS/MP software provides the application server functionality to develop and deploy business-critical online transaction processing (OLTP) applications on HPE NonStop X servers. 
+
+TS/MP allows developers to focus on implementing and refining business logic without having to be concerned about common application services such as:
+- Load balancing
+- Communications I/O
+- Memory management 
+- Fault tolerance 
+- Threading and scheduling
+
+The module supports applications written in C/C++, COBOL, Java and TAL, and is used internally by many NonStop products to inherit the platform's high availability and fault tolerance characteristics.
+
+<!-- 
 # Core Architecture
 
 NonStop systems employ a loosely-coupled cluster of processors connected by a high-speed bus known as InfiniBand from Mellanox. This architecture is fundamental to the system's fault tolerance and scalability.
@@ -53,4 +83,4 @@ The NonStop architecture is designed to scale seamlessly:
 # Conclusion
 The NonStop technical architecture combines hardware redundancy, distributed processing, and specialized software components to create a system capable of continuous operation even in the face of hardware failures or software errors. This unique design makes NonStop systems ideal for applications in finance, telecommunications, and other industries where downtime can have severe consequences.
 
-By leveraging standard hardware components within a fault-tolerant framework, the NonStop Advanced Architecture continues to evolve, providing cutting-edge performance while maintaining the platform's legendary reliability and availability.
+By leveraging standard hardware components within a fault-tolerant framework, the NonStop Advanced Architecture continues to evolve, providing cutting-edge performance while maintaining the platform's legendary reliability and availability. -->

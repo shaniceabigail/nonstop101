@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Subsystems Overview'
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # NonStop Subsystems: A Technical Overview
@@ -37,11 +37,3 @@ NonStop systems include various manageability subsystems to simplify administrat
 •	SCF (Subsystem Control Facility): A command-line interface for configuring and managing NonStop subsystems.
 •	Measure: A subsystem for performance measurement and analysis.
 •	Safeguard: Provides security management and access control features.
-
-## Advanced Architecture Considerations
-The NonStop Advanced Architecture (NSAA) builds upon these subsystems:
-•	Modular Redundancy: NSAA systems can be configured with dual or triple modular redundancy for enhanced fault tolerance.
-•	Standard Hardware Integration: NSAA leverages standard HP 4-way SMP Itanium®2 server modules, combining off-the-shelf hardware with NonStop's robust software architecture.
-
-NonStop subsystems work in concert to provide a highly available, fault-tolerant environment. By understanding these subsystems, developers and administrators can better leverage the full capabilities of NonStop servers, ensuring mission-critical applications remain operational under diverse conditions.
-

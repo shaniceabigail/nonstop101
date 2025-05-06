@@ -20,7 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'shaniceabigail', // Usually your GitHub org/user name.
+  organizationName: 'new2nonstop', // Usually your GitHub org/user name.
+
   projectName: 'nonstop101', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -44,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/shaniceabigail/nonstop101/blob/main/',
+            'https://github.com/new2nonstop/nonstop101/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -79,8 +80,9 @@ const config = {
           //   label: 'Tutorial',
           // },
           {to: '/docs/category/know-your-nonstop', label: 'Basics', position: 'left'},
-          {to: '/docs/category/deep-dives', label: 'Deep Dives', position: 'left'},
+          // {to: '/docs/category/deep-dives', label: 'Deep Dives', position: 'left'},
           {to: '/docs/category/tutorials', label: 'Tutorials', position: 'left'},
+          {to: '/docs/tags', label: 'Tags', position: 'right'},
           // {to: '/docs/category/hpe-nonstop-partners', label: 'Partners', position: 'left'},
           {
             href: 'https://github.com/HewlettPackard/NonStop',
@@ -97,7 +99,11 @@ const config = {
             items: [
               {
                 label: 'Quick Start',
-                to: '/docs/know-your-nonstop/getting-started',
+                to: '/docs/know-your-nonstop/what-is-hpe-nonstop',
+              },
+              {
+                label: 'Tags',
+                to: '/docs/tags',
               },
             ],
           },
@@ -106,15 +112,19 @@ const config = {
             items: [
               {
                 label: 'Connect Worldwide',
-                href: 'https://connect-community.org/nonstop/',
+                href: 'https://connect-community.org/',
               },
               {
-                label: 'NonStop Events',
-                href: 'https://connect-community.org/chapter-events-2024/',
+                label: '2025 NonStop Chapter Events',
+                href: 'https://connect-community.org/chapter-events-2025/',
               },
               {
                 label: 'NonStop Technical Bootcamp',
                 href: 'https://nonstoptbc.com',
+              },
+              {
+                label: 'Become a Connect Member Today',
+                href: 'https://connect-community.org/become-a-member/',
               },
             ],
           },
